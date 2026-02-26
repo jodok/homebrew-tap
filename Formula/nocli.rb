@@ -5,21 +5,21 @@
 class Nocli < Formula
   desc "Notion private API CLI"
   homepage "https://github.com/jodok/nocli"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jodok/nocli/releases/download/v0.1.2/nocli_0.1.2_darwin_amd64.tar.gz"
-      sha256 "5503399bdf76e0329f19bc689a667306493c308697746b4bb6cb4e6e89bfe5bb"
+      url "https://github.com/jodok/nocli/releases/download/v0.1.3/nocli_0.1.3_darwin_amd64.tar.gz"
+      sha256 "88cf3b1a98ca4ecddc397c179ebec9d0a784ce0d46b9d43177c1367459542b95"
 
       define_method(:install) do
         bin.install "nocli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jodok/nocli/releases/download/v0.1.2/nocli_0.1.2_darwin_arm64.tar.gz"
-      sha256 "29354e792422bf959077383753f4fef3080e90792b6b816d36c655e30d66a906"
+      url "https://github.com/jodok/nocli/releases/download/v0.1.3/nocli_0.1.3_darwin_arm64.tar.gz"
+      sha256 "f1adf6ce9418a3daace46c5ea94f37c91ab67296877e4164f95c33b3f801f019"
 
       define_method(:install) do
         bin.install "nocli"
@@ -29,15 +29,15 @@ class Nocli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jodok/nocli/releases/download/v0.1.2/nocli_0.1.2_linux_amd64.tar.gz"
-      sha256 "a6c0ac25d4a415d8d105f46864785653b154a141151b88e778e72e636df57bd8"
+      url "https://github.com/jodok/nocli/releases/download/v0.1.3/nocli_0.1.3_linux_amd64.tar.gz"
+      sha256 "05e4d6034dc9591e2d1aced95f3161844b8fa1ec8cab36b13c2cbdd63e4cf462"
       define_method(:install) do
         bin.install "nocli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jodok/nocli/releases/download/v0.1.2/nocli_0.1.2_linux_arm64.tar.gz"
-      sha256 "ffe0f8394e6cef63302f31a86abd9bd72a41b3a9791a54a2314c62f9e21abc3a"
+      url "https://github.com/jodok/nocli/releases/download/v0.1.3/nocli_0.1.3_linux_arm64.tar.gz"
+      sha256 "8e01005a5415fc88b56cfe380547ed1d535cf1a070579a42f8eaf0491354e676"
       define_method(:install) do
         bin.install "nocli"
       end
