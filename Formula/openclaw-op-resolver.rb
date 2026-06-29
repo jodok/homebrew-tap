@@ -9,7 +9,7 @@ class OpenclawOpResolver < Formula
   license "MIT"
 
   depends_on "node"
-  depends_on "1password-cli"
+  depends_on cask: "1password-cli"
 
   def install
     bin.install "bin/openclaw-op-resolver"
