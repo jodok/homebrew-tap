@@ -9,10 +9,16 @@ class OpenclawOpResolver < Formula
   license "MIT"
 
   depends_on "node"
-  depends_on cask: "1password-cli"
 
   def install
     bin.install "bin/openclaw-op-resolver"
+  end
+
+  def caveats
+    <<~EOS
+      This resolver shells out to the 1Password CLI (`op`), which ships as a cask:
+        brew install --cask 1password-cli
+    EOS
   end
 
   test do
