@@ -6,27 +6,27 @@
 class Lion < Formula
   desc "Task-first LinkedIn CLI: profile, connections, messaging, feed, local message store"
   homepage "https://github.com/jodok/lion"
-  version "1.1.1"
+  version "1.1.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jodok/lion/releases/download/v1.1.1/lion_v1.1.1_darwin_arm64.tar.gz"
-      sha256 "56cb6f10bbede28489d0f78f7da5852467f592cd8a55669680573e7460acb2b8"
+      url "https://github.com/jodok/lion/releases/download/v1.1.2/lion_v1.1.2_darwin_arm64.tar.gz"
+      sha256 "f5204b1f790058acce57363d4d7c76ea295a11c3dff9614465ce801fb1ea9d01"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jodok/lion/releases/download/v1.1.1/lion_v1.1.1_darwin_amd64.tar.gz"
-      sha256 "d091b3069af7ada57644fbdc5cc591cd11be4519609854bc1c566650b599d803"
+      url "https://github.com/jodok/lion/releases/download/v1.1.2/lion_v1.1.2_darwin_amd64.tar.gz"
+      sha256 "fb3058baf23c9366bf597141b7ab3858d1ca2f7313e48ffd6b19637a1ebca90f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jodok/lion/releases/download/v1.1.1/lion_v1.1.1_linux_arm64.tar.gz"
-      sha256 "430e285ecb566b527074481edfe5f4c7f89b37ad4ea020a97c59e337edf3dabf"
+      url "https://github.com/jodok/lion/releases/download/v1.1.2/lion_v1.1.2_linux_arm64.tar.gz"
+      sha256 "3ba5729b5a17afb32b0f749104385ca0bf1da708e38196686f3ff655705920ad"
     end
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jodok/lion/releases/download/v1.1.1/lion_v1.1.1_linux_amd64.tar.gz"
-      sha256 "2a578c9902677cc76f23d7e92b1ba10693c0b50c12efa45cc14f6e19ee35a53b"
+      url "https://github.com/jodok/lion/releases/download/v1.1.2/lion_v1.1.2_linux_amd64.tar.gz"
+      sha256 "8665c69c7e96201b897cb6c39e135373be2363c28645b020e04bb11f8bac1129"
     end
   end
 
